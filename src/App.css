@@ -1,6 +1,201 @@
-.App {
-  text-align: center;
+/* body { */
+  /* text-align: center; */
+  /* background: url(https://media4.giphy.com/media/mZNSjf7LSnxTEEdzcZ/giphy) no-repeat center center fixed;  */
+  /* background: url(https://media4.giphy.com/media/mZNSjf7LSnxTEEdzcZ/giphy.gif?cid=790b761190425b081296e6a578458596b541bed3be384d88&rid=giphy.gif&ct=g) no-repeat center center fixed;  */
+  /* -webkit-background-size: cover; */
+  /* -moz-background-size: cover; */
+  /* -o-background-size: cover; */
+  /* height: 1000px; */
+  /* width: 128px; */
+  /* background-size: 1920px 800px; */
+  /* top: 0; */
+  /* left: 0; */
+  /* background-repeat: no-repeat; */
+  /* display: flex 1 ; */
+  /* z-index: 2; */
+  /* background-color: red; */
+/* } */
+
+.darkness{
+  background-color: red;
+  display: block;
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  height: 738px;
+  width: 1920px;
+  opacity: .5;
 }
+
+.clock{
+  background-image: url("./images/clock.png");
+  background-repeat: no-repeat;
+  height: 95px;
+  width: 80px;
+  display: block;
+  background-size: 100%;
+  margin-left: 899px;
+  top: -89px;
+  position: relative;
+  opacity: 0;
+}
+
+.clock:hover{
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.fish{
+  background-image: url("./images/fish.png");
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 200px;
+  display: block;
+  background-size: 100%;
+  margin-left: 122px;
+  top: -118px;
+  position: relative;
+  opacity: 0;
+}
+
+.fish:hover{
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.dresser-drawer{
+  background-image: url("./images/dresser-drawer.png");
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 100px;
+  display: block;
+  background-size: 100%;
+  margin-left: 246px;
+  top: -112px;
+  position: relative;
+  opacity: 0;
+}
+
+.dresser-drawer:hover{
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.torn-wallpaper{
+  background-image: url("./images/torn-wallpaper.png");
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 50px;
+  display: block;
+  background-size: 100%;
+  margin-left: 1720px;
+  top: -237px;
+  position: relative;
+  opacity: 0;
+}
+
+.torn-wallpaper:hover{
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+
+
+
+.mirror{
+  background-image: url("./images/mirror.png");
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 70px;
+  display: block;
+  background-size: 100%;
+  margin-left: 10px;
+  top: -550px;
+  position: relative;
+  opacity: 1;
+}
+
+.mirror:hover{
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.mirror-redrum{
+  background-image: url("./images/mirror-redrum.png");
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 60px;
+  display: block;
+  background-size: 100%;
+  margin-left: 15px;
+  top: -735px;
+  position: relative;
+  opacity: 0;
+}
+
+.mirror-redrum:hover{
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+
+
+.background-pic{
+  background-image: url("./images/ezgif.com-gif-maker.gif");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 937px;
+  width: 1920px;
+  top: 0;
+  left: 0;
+}
+
+
+.candle{
+  background-image: url("./images/candle_unlit1.png");
+  background-repeat: no-repeat;
+  height: 80px;
+  width: 40px;
+  display: block;
+  background-size: 100%;
+  margin-left: 1230px;
+  top: 300px;
+  position: relative;
+}
+
+.candle:hover{
+  transform: scale(1.1);
+}
+
+
+.necronomicon-closed{
+  background-image: url("./images/necronomicon1.png");
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 50px;
+  display: block;
+  background-size: 100%;
+  margin-left: 1140px;
+  top: 250px;
+  position: relative;
+}
+
+.necronomicon-closed:hover{
+  transform: scale(1.1);
+}
+
+.necronomicon-open{
+  background-image: url("./images/necronomicon2.png");
+  background-repeat: no-repeat;
+  height: 75px;
+  width: 105px;
+  display: bslock;
+  background-size: 100%;
+  margin-left: 1120px;
+  top: 148px;
+  position: relative;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -14,7 +209,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
