@@ -88,16 +88,16 @@ function App() {
 
 
       <div className="background-pic">
-        <a className="candle" href="./images/candle-unlit1.png"onClick={handleCandleClick}></a>
-        <a className="necronomicon-closed" href="./images/necronomicon1.png" onClick={handleClosedBookClick}></a>
-        <a className="necronomicon-open" href="./images/necronomicon2.png" onClick={handleOpenBookClick}></a>
-        <a className="clock" href="./image/clock.png"onClick={handleClockClick}></a>
-        <a className="fish" href="./image/fish.png"onClick={handleFishClick}></a>
-        <a className="dresser-drawer" href="./image/dresser-drawer.png"onClick={handleDresserDrawerClick}></a>
-        <a className="torn-wallpaper" href="./image/torn-wallpaper.png"onClick={handleWallpaperClick}></a>
-        <a className="redrum-wallpaper" href="./image/redrum-wallpaper.png"onClick={handleRedrumClick}></a>
-        <a className="mirror" href="./image/mirror.png"onClick={handleMirrorClick}></a>
-        {/* <a className="mirror-redrum" href="./image/mirror-redrum.png"onClick={handleCandleClick}></a> */}
+        <a className="candle" href="candle-unlit1"onClick={handleCandleClick}> </a>
+        <a className="necronomicon-closed" href="necronomicon1" onClick={handleClosedBookClick}> </a>
+        <a className="necronomicon-open" href="necronomicon2" onClick={handleOpenBookClick}> </a>
+        <a className="clock" href="clock"onClick={handleClockClick}> </a>
+        <a className="fish" href="fish"onClick={handleFishClick}> </a>
+        <a className="dresser-drawer" href="dresser-drawer"onClick={handleDresserDrawerClick}> </a>
+        <a className="torn-wallpaper" href="torn-wallpaper"onClick={handleWallpaperClick}> </a>
+        <a className="redrum-wallpaper" href="redrum-wallpaper"onClick={handleRedrumClick}> </a>
+        <a className="mirror" href="mirror"onClick={handleMirrorClick}> </a>
+        {/* <a className="mirror-redrum" href="mirror-redrum"onClick={handleCandleClick}> </a> */}
 {/*         
         <audio id="audio" type="audio/mpeg" src="../public/the_8_bit_charleston.mp3" allow="autoplay"> </audio>*/}
         
