@@ -35,7 +35,7 @@
   display: block;
   background-size: 100%;
   margin-left: 899px;
-  top: -89px;
+  top: -68px;
   position: relative;
   opacity: 0;
 }
@@ -53,7 +53,7 @@
   display: block;
   background-size: 100%;
   margin-left: 122px;
-  top: -118px;
+  top: -100px;
   position: relative;
   opacity: 0;
 }
@@ -71,7 +71,7 @@
   display: block;
   background-size: 100%;
   margin-left: 246px;
-  top: -112px;
+  top: -95px;
   position: relative;
   opacity: 0;
 }
@@ -89,7 +89,7 @@
   display: block;
   background-size: 100%;
   margin-left: 1720px;
-  top: -237px;
+  top: -217px;
   position: relative;
   opacity: 0;
 }
@@ -167,6 +167,22 @@
   transform: scale(1.1);
 }
 
+.candle-lit{
+  background-image: url("./images/candle_lit.gif");
+  background-repeat: no-repeat;
+  height: 80px;
+  width: 40px;
+  display: block;
+  background-size: 100%;
+  margin-left: 1230px;
+  top: 300px;
+  position: relative;
+}
+
+.candle-lit hover{
+  transform: scale(1.1);
+}
+
 
 .necronomicon-closed{
   background-image: url("./images/necronomicon1.png");
@@ -189,10 +205,10 @@
   background-repeat: no-repeat;
   height: 75px;
   width: 105px;
-  display: bslock;
+  display: block;
   background-size: 100%;
   margin-left: 1120px;
-  top: 148px;
+  top: 240px;
   position: relative;
 }
 
