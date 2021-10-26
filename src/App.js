@@ -72,7 +72,7 @@ function App() {
 
   function handleFishClick(e){
     e.preventDefault()
-    toast.success("Hey there, Goldy!",{position: "bottom-center", autoClose: 2800, icon: "🐟", className:"toasty"}  )
+    toast.success("Hey there, Goldy!",{position: "bottom-center", autoClose: 2800, icon: "🐟"}  )
   }
 
   function handleDresserDrawerClick(e){
@@ -123,7 +123,7 @@ function App() {
         <a className="torn-wallpaper" href="torn-wallpaper"onClick={handleWallpaperClick}> </a>
         <a className="redrum-wallpaper" href="redrum-wallpaper"onClick={handleRedrumClick}> </a>
         <a className="mirror" href="mirror"onClick={handleMirrorClick}> </a>
-        <a className="mirror-redrum" href="mirror-redrum"onClick={handleCandleClick}> </a>
+        {/* <a className="mirror-redrum" href="mirror-redrum"onClick={handleCandleClick}> </a> */}
         
         <ReactAudioPlayer src="the_8_bit_charleston.mp3" id="audio" autoPlay controls loop className="audio"/>  
 
