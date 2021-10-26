@@ -126,7 +126,9 @@ console.log(isDark)
 
   function handleMirrorClick(e){
     e.preventDefault()
-    toast.success("Ahhh! A devil! A handsome one at that.",{position: "top-center", autoClose: 2800, icon: "😏"}  )
+    toast.success(<b>Ahhh! A devil!</b>,{position: "top-center", autoClose: 1300, icon: "😱"}  )
+    setTimeout(()=>{toast.success("A handsome one at that.",{position: "top-center", autoClose: 1500, icon: "😏"})},1500)
+
   }
 
   function handleFishClick(e){
@@ -147,7 +149,9 @@ console.log(isDark)
 
   function handleWallpaperClick(e){
     e.preventDefault()
-    toast.success("The wallpaper is peeling off... Mr. Fancy-Pants Landlord can't be bothered to fix it.",{position: "top-center", autoClose: 3800, icon: "🙄"}  )
+    toast.success("The wallpaper is peeling off...",{position: "top-center", autoClose: 1300, icon: "😒"}  )
+    setTimeout(()=>{toast.success("Mr. Fancy-Pants Landlord can't be bothered to fix it.",{position: "top-center", autoClose: 1500, icon: "🙄"})},2000)
+
   }
 
 
