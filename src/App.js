@@ -1,8 +1,9 @@
 import './App.css';
 import ReactAudioPlayer from 'react-audio-player';
 import "react-toastify/dist/ReactToastify.css"
-import { toast } from 'react-toastify';
+import { Bounce, Flip, Slide, toast, Zoom } from 'react-toastify';
 import { useState } from 'react';
+import { injectStyle } from "react-toastify/dist/inject-style";
 
 
 function App() {
@@ -23,17 +24,60 @@ function App() {
   )}
   function handleCandleClick(e){
     e.preventDefault()
-    toast.success(<CandleAlert />,{position: "bottom-center", autoClose: false, icon: "🕯️"} )
+    toast.success(<CandleAlert />,{position: "top-center", autoClose: false, icon: "🕯️"} )
   }
   function handleLitCandleClick(e){
     e.preventDefault()
-    toast.success("Didn't seem to do much.", {position: "bottom-center", autoClose: 2800, icon:"🕯"})
+    toast.success("Didn't seem to do much.", {position: "top-center", autoClose: 2800, icon:"🕯"})
   }
 
+  const [isDark, setIsDark]=useState(false)
+console.log(isDark)
 
   const [bookActive, setbookActive]=useState(false)
+ 
   function toggleBook(){
+
     setbookActive(true)
+    setTimeout((e)=>{toast.success("Interesting...",{position: "top-center", transition: Slide, autoClose:3000,icon:"🤔"},setIsDark(true))})
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "top-right", transition: Zoom, autoClose: 500, icon:"🩸"},setIsDark(false))},1000)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "bottom-right", transition: Zoom, autoClose: 500, icon:"🩸"},setIsDark(true))},1500)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "top-center", transition: Flip, autoClose: 500, icon:"🩸"},setIsDark(false))},2000)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "top-left", transition: Bounce, autoClose: 500, icon:"🩸"},setIsDark(true))},2500)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "bottom-right", transition: Zoom, autoClose: 500, icon:"🩸"},setIsDark(false))},2900)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "bottom-center", transition: Zoom, autoClose: 500, icon:"🩸"},setIsDark(true))},3000)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "top-left", transition: Flip, autoClose: 500, icon:"🩸"},setIsDark(false))},3050)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "bottom-left", transition: Flip, autoClose: 500, icon:"🩸"},setIsDark(true))},3100)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "bottom-right", transition: Zoom, autoClose: 500, icon:"🩸"},setIsDark(false))},3200)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "top-right", transition: Flip, autoClose: 500, icon:"🩸"},setIsDark(true))},3225)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "top-left", transition: Slide, autoClose: 500, icon:"🩸"},setIsDark(false))},3250)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "bottom-center", transition: Flip, autoClose: 500, icon:"🩸"},setIsDark(true))},3300)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "top-right", transition: Bounce, autoClose: 500, icon:"🩸"},setIsDark(false))},3320)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "bottom-right", transition: Flip, autoClose: 500, icon:"🩸"},setIsDark(true))},3325)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "bottom-center", transition: Zoom, autoClose: 500, icon:"🩸"},setIsDark(false))},3330)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "bottom-left", transition: Zoom, autoClose: 500, icon:"🩸"},setIsDark(true))},3335)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "top-right", transition: Slide, autoClose: 500, icon:"🩸"},setIsDark(false))},3360)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "bottom-left", transition: Flip, autoClose: 500, icon:"🩸"},setIsDark(true))},3365)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "bottom-right", transition: Zoom, autoClose: 500, icon:"🩸"},setIsDark(false))},3380)
+    setTimeout((e)=>{toast.success("um...",{position: "top-center",autoClose:1500, icon:"😟"},setIsDark(true))},4000)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "bottom-left", transition: Zoom, autoClose: 500, icon:"🩸"},setIsDark(false))},5000)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "bottom-right", transition: Zoom, autoClose: 500, icon:"🩸"},setIsDark(true))},5010)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "top-right", transition: Slide, autoClose: 500, icon:"🩸"},setIsDark(false))},5050)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "bottom-center", transition: Zoom, autoClose: 500, icon:"🩸"},setIsDark(true))},5052)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "top-left", transition: Flip, autoClose: 500, icon:"🩸"},setIsDark(false))},5100)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "top-right", transition: Flip, autoClose: 500, icon:"🩸"},setIsDark(true))},5125)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "bottom-right", transition: Zoom, autoClose: 500, icon:"🩸"},setIsDark(false))},5150)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "top-right", transition: Bounce, autoClose: 500, icon:"🩸"},setIsDark(true))},5155)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "top-left", transition: Zoom, autoClose: 500, icon:"🩸"},setIsDark(false))},5160)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "bottom-center", transition: Zoom, autoClose: 500, icon:"🩸"},setIsDark(true))},5161)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "top-left", transition: Flip, autoClose: 500, icon:"🩸"},setIsDark(false))},5170)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "bottom-center", transition: Bounce, autoClose: 500, icon:"🩸"},setIsDark(true))},5185)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "bottom-right", transition: Zoom, autoClose: 500, icon:"🩸"},setIsDark(false))},5190)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "top-left", transition: Bounce, autoClose: 500, icon:"🩸"},setIsDark(true))},5199)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "bottom-center", transition: Flip, autoClose: 500, icon:"🩸"},setIsDark(false))},5200)
+    setTimeout((e)=>{toast.dark("latin stuff",{position: "top-right", transition: Zoom, autoClose: 500, icon:"🩸"},setIsDark(true))},5205)
+    setTimeout((e)=>{toast.success("well that was weird...",{position: "top-center", autoClose:1500, icon:"😐"},setIsDark(false))},7000)
+    setTimeout((e)=>{toast.dark("latin stuff.",{position: "bottom-left", transition:Flip, autoClose: 10, icon:"🩸"})},11000)
   }
   function handleBook(){
     toggleBook()
@@ -47,48 +91,63 @@ function App() {
   )}
   function handleBookClosed(e){
     e.preventDefault()
-    toast.success(<BookAlert/>,{position: "bottom-center", autoClose: false, icon: "📕"}  )
+    toast.success(<BookAlert/>,{position: "top-center", autoClose: false, icon: "📕"}  )
   }
   function handleBookOpen(e){
     e.preventDefault()
-    toast.error(<BookOpenAlert/>,{position: "bottom-center", autoClose: false, icon: "💀"} )
+    toast.error(<BookOpenAlert/>,{position: "top-center", autoClose: false, icon: "💀"} )
   }
 
   function BookOpenAlert(){
     return(
-    <div><em>Necronomicon Ex-Mortis...<br/></em><b>The book of the Dead</b></div>
+    <div><em>"Necronomicon Ex-Mortis...<br/></em><b>The book of the Dead"</b><br/>Should... Should I read it?
+    <button onClick={readIt}>Read it</button>
+    <button onClick={dontReadIt}>Don't read that thing.</button>
+    </div>
   )}
+
+  function dontReadIt(){
+    return(
+      toast.success("Good Call.",{position: "top-center",autoClose:2000,icon:"😳"})
+    )
+  }
+
+  function readIt(){
+    return(
+      toast.success("*Sigh...*",{position: "top-center",autoClose:2000,icon:"😑"})
+    )
+  }
 
   function handleClockClick(e){
     e.preventDefault()
-    toast.success("Here kitty kitty",{position: "bottom-center", autoClose: 2800, icon: "😺"}  )
+    toast.success("Here kitty kitty",{position: "top-center", autoClose: 2800, icon: "😺"}  )
   }
 
 
   function handleMirrorClick(e){
     e.preventDefault()
-    toast.success("Ahhh! A devil! A handsome one at that.",{position: "bottom-center", autoClose: 2800, icon: "😏"}  )
+    toast.success("Ahhh! A devil! A handsome one at that.",{position: "top-center", autoClose: 2800, icon: "😏"}  )
   }
 
   function handleFishClick(e){
     e.preventDefault()
-    toast.success("Hey there, Goldy!",{position: "bottom-center", autoClose: 2800, icon: "🐟"}  )
+    toast.success("Hey there, Goldy!",{position: "top-center", autoClose: 2800, icon: "🦈"}  )
   }
 
   function handleDresserDrawerClick(e){
     e.preventDefault()
-    toast.success("A whole lot of blue shirts and brown pants...",{position: "bottom-center", autoClose: 2800, icon: "👕"}  )
+    toast.success("A whole lot of blue shirts and brown pants...",{position: "top-center", autoClose: 2800, icon: "👕"}  )
   }
 
   function handleRedrumClick(e){
     e.preventDefault()
-    toast.success("0101100101? Sounds like gibberish!",{position: "bottom-center", autoClose: 2800, icon: "🤖"}  )
+    toast.success("0101100101? Sounds like gibberish!",{position: "top-center", autoClose: 2800, icon: "🤖"}  )
 
   }
 
   function handleWallpaperClick(e){
     e.preventDefault()
-    toast.success("The wallpaper is peeling off... Mr. Fancy-Pants Landlord can't be bothered to fix it.",{position: "bottom-center", autoClose: 3800, icon: "🙄"}  )
+    toast.success("The wallpaper is peeling off... Mr. Fancy-Pants Landlord can't be bothered to fix it.",{position: "top-center", autoClose: 3800, icon: "🙄"}  )
   }
 
 
@@ -98,13 +157,14 @@ function App() {
   // }
 
   toast.configure()
+  injectStyle()
 
 
-  window.onload = function() {
-    var backgroundAudio=document.getElementById("audio");
-    backgroundAudio.volume = .1
+//   window.onload = function() {
+//     var backgroundAudio=document.getElementById("audio");
+//     // backgroundAudio.volume = .1
 
-}
+// }
 
 
 
@@ -127,7 +187,7 @@ function App() {
         
         <ReactAudioPlayer src="the_8_bit_charleston.mp3" id="audio" autoPlay controls loop className="audio"/>  
 
-        {/* <div className="darkness"> </div>  when necronomicon is opened, loop this to make the screen flash */}
+      {isDark?<div className="darkness"> </div>:null}
       </div>
 
 
