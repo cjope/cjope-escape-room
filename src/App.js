@@ -23,11 +23,11 @@ function App() {
   )}
   function handleCandleClick(e){
     e.preventDefault()
-    toast.success(<CandleAlert />,{position: toast.POSITION.TOP_CENTER} )
+    toast.success(<CandleAlert />,{position: "bottom-center", autoClose: false, icon: "🕯️"} )
   }
   function handleLitCandleClick(e){
     e.preventDefault()
-    toast.success("Didn't seem to do much.")
+    toast.success("Didn't seem to do much.", {position: "bottom-center", autoClose: 2800, icon:"🕯"})
   }
 
 
@@ -47,11 +47,11 @@ function App() {
   )}
   function handleBookClosed(e){
     e.preventDefault()
-    toast.success(<BookAlert/>,{position: toast.POSITION.TOP_CENTER} )
+    toast.success(<BookAlert/>,{position: "bottom-center", autoClose: false, icon: "📕"}  )
   }
   function handleBookOpen(e){
     e.preventDefault()
-    toast.error(<BookOpenAlert/>,{position: toast.POSITION.TOP_CENTER})
+    toast.error(<BookOpenAlert/>,{position: "bottom-center", autoClose: false, icon: "💀"} )
   }
 
   function BookOpenAlert(){
@@ -59,41 +59,43 @@ function App() {
     <div><em>Necronomicon Ex-Mortis...<br/></em><b>The book of the Dead</b></div>
   )}
 
-
-
-
-
-
-
   function handleClockClick(e){
     e.preventDefault()
-    alert("here kitty kitty")
+    toast.success("Here kitty kitty",{position: "bottom-center", autoClose: 2800, icon: "😺"}  )
   }
 
 
   function handleMirrorClick(e){
     e.preventDefault()
-    alert("look at this handsome devil")
+    toast.success("Ahhh! A devil! A handsome one at that.",{position: "bottom-center", autoClose: 2800, icon: "😏"}  )
   }
 
   function handleFishClick(e){
     e.preventDefault()
-    alert("hey there goldy")  }
+    toast.success("Hey there, Goldy!",{position: "bottom-center", autoClose: 2800, icon: "🐟", className:"toasty"}  )
+  }
 
   function handleDresserDrawerClick(e){
     e.preventDefault()
-    alert("opening the dresser")
+    toast.success("A whole lot of blue shirts and brown pants...",{position: "bottom-center", autoClose: 2800, icon: "👕"}  )
   }
 
   function handleRedrumClick(e){
     e.preventDefault()
-    alert("0101100101? Sounds like gibberish!")
+    toast.success("0101100101? Sounds like gibberish!",{position: "bottom-center", autoClose: 2800, icon: "🤖"}  )
+
   }
 
   function handleWallpaperClick(e){
     e.preventDefault()
-    alert("This junk came right off! If I could get out of this room, I'd give the landlord a piece of my mind!")
+    toast.success("The wallpaper is peeling off... Mr. Fancy-Pants Landlord can't be bothered to fix it.",{position: "bottom-center", autoClose: 3800, icon: "🙄"}  )
   }
+
+
+  // function handleDarknessMyOldFriend(e){
+  //   e.preventDefault()
+
+  // }
 
   toast.configure()
 
@@ -121,12 +123,11 @@ function App() {
         <a className="torn-wallpaper" href="torn-wallpaper"onClick={handleWallpaperClick}> </a>
         <a className="redrum-wallpaper" href="redrum-wallpaper"onClick={handleRedrumClick}> </a>
         <a className="mirror" href="mirror"onClick={handleMirrorClick}> </a>
-        {/* <a className="mirror-redrum" href="mirror-redrum"onClick={handleCandleClick}> </a> */}
-        {/* <a className="candle-lit" href="candle"></a> */}
+        <a className="mirror-redrum" href="mirror-redrum"onClick={handleCandleClick}> </a>
         
-        <ReactAudioPlayer src="the_8_bit_charleston.mp3" id="audio" autoPlay controls loop/>
+        <ReactAudioPlayer src="the_8_bit_charleston.mp3" id="audio" autoPlay controls loop className="audio"/>  
 
-        {/* <div className="darkness"> </div>  when necronomicon is opened, loop this to make the screen flash*/}
+        {/* <div className="darkness"> </div>  when necronomicon is opened, loop this to make the screen flash */}
       </div>
 
 

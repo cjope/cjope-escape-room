@@ -35,8 +35,8 @@
   display: block;
   background-size: 100%;
   margin-left: 899px;
-  top: -68px;
-  position: relative;
+  top: 113px;
+  position: absolute;
   opacity: 0;
 }
 
@@ -53,8 +53,8 @@
   display: block;
   background-size: 100%;
   margin-left: 122px;
-  top: -100px;
-  position: relative;
+  top: 178px;
+  position: absolute;
   opacity: 0;
 }
 
@@ -71,14 +71,13 @@
   display: block;
   background-size: 100%;
   margin-left: 246px;
-  top: -95px;
-  position: relative;
-  opacity: 0;
+  top: 304px;
+  position: absolute;
+  opacity: 1;
 }
 
 .dresser-drawer:hover{
   transform: scale(1.1);
-  opacity: 1;
 }
 
 .torn-wallpaper{
@@ -89,18 +88,30 @@
   display: block;
   background-size: 100%;
   margin-left: 1720px;
-  top: -217px;
-  position: relative;
+  top: 300px;
+  position: absolute;
   opacity: 0;
 }
 
 .torn-wallpaper:hover{
   transform: scale(1.1);
-  opacity: 1;
 }
 
+/* .redrum-wallpaper{
+  background-image: url("./images/redrum-wallpaper.png");
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 50px;
+  display: block;
+  background-size: 100%;
+  margin-left: 1720px;
+  top: 300px;
+  position: absolute;
+}
 
-
+.redrum-wallpaper:hover{
+  transform: scale(1.1);
+} */
 
 .mirror{
   background-image: url("./images/mirror.png");
@@ -110,14 +121,13 @@
   display: block;
   background-size: 100%;
   margin-left: 10px;
-  top: -550px;
-  position: relative;
+  top: 100px;
+  position: absolute;
   opacity: 1;
 }
 
 .mirror:hover{
   transform: scale(1.1);
-  opacity: 1;
 }
 
 .mirror-redrum{
@@ -128,14 +138,19 @@
   display: block;
   background-size: 100%;
   margin-left: 15px;
-  top: -735px;
-  position: relative;
-  opacity: 0;
+  top: 100px;
+  position: absolute;
 }
 
 .mirror-redrum:hover{
   transform: scale(1.1);
-  opacity: 1;
+}
+
+.audio{
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: .5;
 }
 
 
@@ -163,6 +178,10 @@
   position: relative;
 }
 
+.toasty{
+  background-color: black;
+}
+
 .candle:hover{
   transform: scale(1.1);
 }
@@ -174,8 +193,8 @@
   width: 40px;
   display: block;
   background-size: 100%;
-  margin-left: 1230px;
-  top: 300px;
+  margin-left: 1231px;
+  top: 288px;
   position: relative;
 }
 
