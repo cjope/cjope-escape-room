@@ -90,10 +90,26 @@
   margin-left: 1720px;
   top: 300px;
   position: absolute;
-  opacity: 0;
 }
 
 .torn-wallpaper:hover{
+  transform: scale(1.1);
+}
+
+
+.desk-drawer{
+  background-image: url("./images/deskdrawer.png");
+  background-repeat: no-repeat;
+  height: 48px;
+  width: 152px;
+  display: block;
+  background-size: 100%;
+  margin-left: 1439px;
+  top: 450px;
+  position: absolute;
+}
+
+.desk-drawer:hover{
   transform: scale(1.1);
 }
 
@@ -175,13 +191,13 @@
   background-size: 100%;
   margin-left: 1230px;
   top: 300px;
-  position: relative;
+  position: absolute;
 }
 
 .toasty{
   background-color: black;
   color: pink;
-  
+
 }
 
 .candle:hover{
@@ -197,7 +213,7 @@
   background-size: 100%;
   margin-left: 1231px;
   top: 288px;
-  position: relative;
+  position: absolute;
 }
 
 .candle-lit hover{
@@ -212,9 +228,9 @@
   width: 50px;
   display: block;
   background-size: 100%;
-  margin-left: 1140px;
-  top: 250px;
-  position: relative;
+  margin-left: 1150px;
+  top: 330px;
+  position: absolute;
 }
 
 .necronomicon-closed:hover{
@@ -229,9 +245,89 @@
   display: block;
   background-size: 100%;
   margin-left: 1120px;
-  top: 240px;
-  position: relative;
+  top: 320px;
+  position: absolute;
 }
+
+.broomstick{
+  background-image: url("./images/broomstick.png");
+  background-repeat: no-repeat;
+  height: 410px;
+  width: 105px;
+  transform: scale(70%) rotate(.47turn);
+  display: block;
+  background-size: 100%;
+  margin-left: 1600px;
+  top: 220px;
+  position: absolute;
+}
+
+.broomstick:hover{
+  transform: scale(77%) rotate(.47turn);
+}
+
+.doorknob{
+  background-image: url("./images/doorknob.png");
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 37px;
+  display: block;
+  background-size: 100%;
+  margin-left: 1830px;
+  top: 415px;
+  position: absolute;
+}
+
+.doorknob:hover{
+  transform: scale(1.2);
+}
+
+.ash{
+  background-image: url("./images/ash.png");
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 136px;
+  display: block;
+  background-size: 100%;
+  margin-left: 997px;
+  top: 256px;
+  position: absolute;
+}
+
+/* .sans-hand{
+  background-image: url("./images/giphy.gif");
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 196px;
+  display: block;
+  background-size: 100%;
+  margin-left: 123px;
+  top: 183px;
+  position: absolute;
+}
+
+.sans-hand:hover{
+  background-image: url("./images/fish.png");
+  transform: scale(1.1);
+} */
+
+
+
+.radio{
+  background-image: url("./images/radio.png");
+  background-repeat: no-repeat;
+  height: 75px;
+  width: 105px;
+  display: block;
+  background-size: 100%;
+  margin-left: 1150px;
+  top: 440px;
+  position: absolute;
+}
+.radio:hover{
+  transform: scale(1.1);
+}
+
 
 
 .App-logo {

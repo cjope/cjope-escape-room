@@ -1,8 +1,8 @@
 import './App.css';
-import ReactAudioPlayer from 'react-audio-player';
+// import ReactAudioPlayer from 'react-audio-player';
 import "react-toastify/dist/ReactToastify.css"
 import { Bounce, Flip, Slide, toast, Zoom } from 'react-toastify';
-import { useState } from 'react';
+import {useState } from 'react';
 import { injectStyle } from "react-toastify/dist/inject-style";
 
 
@@ -122,8 +122,8 @@ console.log(isDark)
     e.preventDefault()
     toast.success("Here kitty kitty",{position: "top-center", autoClose: 2800, icon: "😺"}  )
   }
-
-
+  
+  
   function handleMirrorClick(e){
     e.preventDefault()
     toast.success(<b>Ahhh! A devil!</b>,{position: "top-center", autoClose: 1300, icon: "😱"}  )
@@ -144,7 +144,11 @@ console.log(isDark)
   function handleRedrumClick(e){
     e.preventDefault()
     toast.success("0101100101? Sounds like gibberish!",{position: "top-center", autoClose: 2800, icon: "🤖"}  )
+  }
 
+  function handleBroomstickClick(e){
+    e.preventDefault()
+    toast.success("This... is my BROOMSTICK",{position: "top-center", autoClose: 2800, icon: "🧹"}  )
   }
 
   function handleWallpaperClick(e){
@@ -154,21 +158,47 @@ console.log(isDark)
 
   }
 
+  let music = new Audio("./the_8_bit_charleston.mp3")
 
-  // function handleDarknessMyOldFriend(e){
+  function handleRadioOn(){
+    music.play()
+    toast.success("Groovy.",{position: "top-center", icon: "😎"}  )
+  }
+  function handleRadioOff(){
+    music.pause()
+  }
+  function RadioAlert(){
+    return(
+    <div>My radio!<br/>
+        <button onClick={handleRadioOn}>Turn on</button>
+        <button onClick={handleRadioOff}>Turn Off</button>
+      </div>
+  )}
+  function handleRadioClick(e){
+    e.preventDefault()
+    toast.success(<RadioAlert />,{position: "top-center", autoClose: false, icon: "📻"} )
+  }
+  
+  
+  function handleDoorknobClick(e){
+    e.preventDefault()
+    toast.success("I doesn't seem to open.",{position: "top-center", autoClose: 2800, icon: "🚪"} )
+  }
+
+
+  function handleDeskDrawerClick(e){
+    e.preventDefault()
+    toast.success("Look at this junk!",{position: "top-center", autoClose: 2800, icon: "🗃"} )
+  }
+
+  // function handleAshClick(e){
   //   e.preventDefault()
-
+  //   toast.success("How's it goin?",{position: "top-center", autoClose: 2800, icon: "😎"} )
   // }
+
 
   toast.configure()
   injectStyle()
-
-
-//   window.onload = function() {
-//     var backgroundAudio=document.getElementById("audio");
-//     // backgroundAudio.volume = .1
-
-// }
 
 
 
@@ -188,8 +218,19 @@ console.log(isDark)
         <a className="redrum-wallpaper" href="redrum-wallpaper"onClick={handleRedrumClick}> </a>
         <a className="mirror" href="mirror"onClick={handleMirrorClick}> </a>
         {/* <a className="mirror-redrum" href="mirror-redrum"onClick={handleCandleClick}> </a> */}
-        
-        <ReactAudioPlayer src="the_8_bit_charleston.mp3" id="audio" autoPlay controls loop className="audio"/>  
+        <a className="radio" href="radio" onClick={handleRadioClick}> </a>
+        <a className="broomstick" href="broomstick" onClick={handleBroomstickClick}> </a>
+        <a className="doorknob" href="doorknob" onClick={handleDoorknobClick}> </a>
+        <a className="desk-drawer" href="desk-drawer" onClick={handleDeskDrawerClick}> </a>
+        {/* <a className="ash" href="ash" onClick={handleAshClick}> </a> */}
+        {/* <a className="ash-saw" href="ash-saw" onClick={handleAshClick}> </a> */}
+        {/* <a className="sans-hand" href="sans-hand" onClick={handleAshClick}> </a> */}
+        {/* <img className="sans-hand"></img> */}
+
+        {/* <ReactAudioPlayer src="the_8_bit_charleston.mp3" id="audio" style={{opacity:1, width:"40px", overflow:"hidden"}} autoPlay controls loop className="radio "/>   */}
+
+        {/* <ReactAudioPlayer src="the_8_bit_charleston.mp3" id="radio  " loop className="radio "/>   */}
+
 
       {isDark?<div className="darkness"> </div>:null}
       </div>
